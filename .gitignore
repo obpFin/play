@@ -1,1 +1,6 @@
-node_modules
+.vscode
+**/build/
+**/src/**/*.js
+**/src/**/*.js.map
+**/node_modules/
+**/package-lock.json
