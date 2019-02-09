@@ -1,0 +1,24 @@
+{
+  "name": "play",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obpFin/play.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/obpFin/play/issues"
+  },
+  "homepage": "https://github.com/obpFin/play#readme",
+  "devDependencies": {
+    "tsc": "^1.20150623.0",
+    "tsc-watch": "^1.1.37",
+    "typescript": "^3.3.3"
+  }
+}
