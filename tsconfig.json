@@ -13,9 +13,9 @@
     "moduleResolution": "node",
     "strictNullChecks": true,
     "importHelpers": true,
-    // "types": [
-    //   "node"
-    // ],
+    "types": [
+      "node"
+    ],
     "typeRoots": [
       "node_modules/@types"
     ],
