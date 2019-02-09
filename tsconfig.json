@@ -13,9 +13,9 @@
     "moduleResolution": "node",
     "strictNullChecks": true,
     "importHelpers": true,
-    "types": [
-      "node"
-    ],
+    // "types": [
+    //   "node"
+    // ],
     "typeRoots": [
       "node_modules/@types"
     ],
@@ -25,8 +25,8 @@
     ]
   },
   "include": [
-    "./src/DemoServer.ts",
-    "./src/controllers/**/*"
+    "./src/server.ts",
+    //"./src/controllers/**/*"
   ],
   "exclude": [
     "**/node_modules/",
