@@ -24,7 +24,7 @@ class PlayController {
 
             cinfo('API: "GET /api/say-hello/:name" called with param: ' + name);
 
-            res.status(250).json({response: `${this.SUC_MSG} ${name}`});
+            res.status(250).json({response: `${this.SUC_MSG}`});
         } catch (err) {
             cerr(err);
             res.status(400).json({response: this.ERR_MSG});

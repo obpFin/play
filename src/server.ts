@@ -1,7 +1,7 @@
 import * as bodyParser from 'body-parser';
 import { Server } from '@overnightjs/core';
 import { cimp, cinfo } from 'simple-color-print';
-import PlayController from './controllers/PlayController';
+import PlayController from './controllers/play/PlayController';
 
 
 class PlayServer extends Server {

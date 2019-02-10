@@ -4,7 +4,7 @@ var tslib_1 = require("tslib");
 var bodyParser = require("body-parser");
 var core_1 = require("@overnightjs/core");
 var simple_color_print_1 = require("simple-color-print");
-var PlayController_1 = require("./controllers/PlayController");
+var PlayController_1 = require("./controllers/play/PlayController");
 var PlayServer = (function (_super) {
     tslib_1.__extends(PlayServer, _super);
     function PlayServer() {
