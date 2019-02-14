@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm install --only=prod && node start.js prod",
     "start:express": "tsc-watch --onSuccess \"node start.js dev\" --onFailure \"echo Beep! Compilation Failed\" ",
-    "start:react": "cd ./src/public/react/demo-react/ && npm start",
+    "start:react": "cd ./src/public/react/play-react/ && npm start",
     "test": "tsc && node start.js test",
     "build": "sh ./utils/buildForProd.sh"
   },
