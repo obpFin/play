@@ -4,3 +4,4 @@
 **/src/**/*.js.map
 **/node_modules/
 **/package-lock.json
+docker_web_app
