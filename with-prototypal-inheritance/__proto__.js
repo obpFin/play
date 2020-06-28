@@ -25,7 +25,7 @@ let lizard = {
 // lizard.__proto__ = dragon
 // log(lizard.sing());
 
-lizard.__proto__ = dragon
+lizard.__proto__ = dragon     // This is an antipattern
 for (let prop in lizard) {
   if (lizard.hasOwnProperty(prop)) {
     log(prop)
