@@ -28,7 +28,7 @@
     "tsc": "^1.20150623.0",
     "tsc-watch": "^1.1.37",
     "typescript": "^3.3.3",
-    "webpack-cli": "^3.2.3",
+    "webpack-cli": "^3.3.12",
     "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
@@ -36,6 +36,6 @@
     "@types/express": "^4.16.1",
     "express": "^4.16.4",
     "simple-color-print": "^1.0.6",
-    "webpack": "^4.19.1"
+    "webpack": "^4.43.0"
   }
 }
