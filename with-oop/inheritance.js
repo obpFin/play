@@ -53,3 +53,8 @@ log(peter)
 const shrek = new Ogre('Shrek', 'club', 'green')
 log(shrek.attack())
 log(shrek.makeFort())
+
+log('Ogre.isPrototypeOf shrek: ', Ogre.isPrototypeOf(shrek))
+log('Ogre.prototype.isPrototypeOf shrek: ', Ogre.prototype.isPrototypeOf(shrek))
+log('peter is instance of Elf: ', peter instanceof Elf)
+log('peter is instance of Character: ', peter instanceof Character)
