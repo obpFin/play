@@ -1,3 +1,5 @@
+// Side effects
+
 const log = console.log
 
 // no side-effects
@@ -20,3 +22,13 @@ function removeLastItem(arr) {
   return newArr
 }
 removeLastItem(array2)
+
+// Idempotence
+
+function  notGood(num) {
+  return log(num)
+}
+
+notGood(2)
+
+log(Math.abs(53))
