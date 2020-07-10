@@ -32,3 +32,16 @@ function  notGood(num) {
 notGood(2)
 
 log(Math.abs(53))
+
+// Immutability
+
+const obj = {name: 'Kelly'}
+function clone(obj) {
+  return {...obj}   // This is pure
+}
+
+function updateName(obj) {
+  const obj2 = clone(obj)
+  obj2.name = 'Nana'
+  return obj2
+}
