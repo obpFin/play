@@ -53,7 +53,7 @@ const hof = (fn) => fn(5)
 log('hof:', hof(function a(x){return x}))
   
 // Closure
-// function has access to outside it's immediate scope
+// function has access to outer function scope
 
 const closure = function() {
   let count = 0;
@@ -64,3 +64,13 @@ const closure = function() {
 }
 const incrementFn = closure()
 log('closure: ', incrementFn())
+
+// Currying
+// Modify function and it's parameters
+
+const multiply = (a, b) => a*b
+const curriedMultiply = (a) => (b) => a*b
+log('curriedMultiply', curriedMultiply(3)(4))
+
+const curriedMultiplyByFive = curriedMultiply(5)
+log('curriedMultiplyByFive', curriedMultiplyByFive(4))
