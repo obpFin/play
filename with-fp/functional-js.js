@@ -67,6 +67,7 @@ log('closure: ', incrementFn())
 
 // Currying
 // Modify function and it's parameters
+// Expects one argument at a time
 
 const multiply = (a, b) => a*b
 const curriedMultiply = (a) => (b) => a*b
@@ -74,3 +75,33 @@ log('curriedMultiply', curriedMultiply(3)(4))
 
 const curriedMultiplyByFive = curriedMultiply(5)
 log('curriedMultiplyByFive', curriedMultiplyByFive(4))
+
+// Partial application
+// Take a function and create a new one with one or more of its arguments already “set” or partially applied
+// Expects all arguments
+
+const multiply2 = (a, b, c) => a*b*c
+const partialMultiplyByFive = multiply2.bind(null, 5)
+log('partialMultiplyByFive', partialMultiplyByFive(4, 10))
+
+// Memoization
+// Store function return values to be accessed later
+function addTo80(n) {
+  return n + 80
+}
+
+function memoizedAddTo80() {
+  let cache = {}
+  return function(n) {
+    if (n in cache) {
+      return cache[n]
+    }
+    console.log('Long time...')
+    cache[n] = n + 80
+    return cache[n]
+  }
+}
+const memoized = memoizedAddTo80()
+
+log('memoizedAddTo80', memoized(5))
+log('memoizedAddTo80', memoized(5))
