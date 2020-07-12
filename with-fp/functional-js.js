@@ -45,3 +45,22 @@ function updateName(obj) {
   obj2.name = 'Nana'
   return obj2
 }
+
+// HOF
+// Either takes one or more functions as arguments, or returns a function (callback)
+
+const hof = (fn) => fn(5)
+log('hof:', hof(function a(x){return x}))
+  
+// Closure
+// function has access to outside it's immediate scope
+
+const closure = function() {
+  let count = 0;
+  return function increment() {
+    count++
+    return count
+  }
+}
+const incrementFn = closure()
+log('closure: ', incrementFn())
