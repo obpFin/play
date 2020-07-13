@@ -105,3 +105,18 @@ const memoized = memoizedAddTo80()
 
 log('memoizedAddTo80', memoized(5))
 log('memoizedAddTo80', memoized(5))
+
+// Compose - combines functions, a pipe flowing right-to-left
+// Pipe - combines functions, a pipe flowing left-to-right
+
+const compose = (f, g) => (data) => f(g(data))
+const pipe = (f, g) => (data) => g(f(data))
+
+const multiplyBy3 = (num) => num*3
+const makePositive = (num) => Math.abs(num)
+const multiplyBy3Absolute = compose(multiplyBy3, makePositive)
+
+log('multiplyBy3Absolute', multiplyBy3Absolute(-50))
+
+// Arity
+// a number of arguments the function takes
