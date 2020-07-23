@@ -19,3 +19,15 @@ Promise.resolve('asyncfail')
         console.error(err)
         return 'failed'
     })
+
+// handle errors with async/await
+
+(async function() {
+  try {
+      await Promise.reject('oopsie')
+  } catch (err) {
+      console.error(err)
+  }
+
+  console.log('This is still good!')
+})()
